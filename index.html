@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html style="background-color:rgb(135, 223, 235);">
+    <head>
+        <title>survey-form</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <h1 id="title"> HTML Survey Form</h1>
+    <p id="explanation">Have your say!</p>
+    <form id="survay-form">
+        <label for="fname"> First Name : </label><br/>
+        <input required id="fname" type="text" placeholder="write your first name" style="background-color:aqua;" size="25"><br/>
+        <label for="lname">last name:</label> <br/>
+        <input required id="lname" type="text" placeholder="write your lalst name" style="background-color:aqua;" size="25"><br/>
+        <lable for="email">Email</lable><br/>
+        <input required id="email" type="email" placeholder="write your email" style="background-color: aqua" size="25"><br/>
+        <label for="password">password</label><br/>
+        <input required id="password" type="password" style="background-color: aqua"></input><br/>
+        <input type="checkbox" id="show password"> show password</input><br/>
+        <label for="date">DoB</label><br/>
+        <input id="date" type="date" style="background-color: aqua"><br/>
+        <p>Which element of HTML do you like?</p>
+        <input id="tags" type="radio" name="favorite"> 
+        <label for="tags">Tags</label><br/>
+        <input id="attributes" type="radio" name="favorite">
+        <label for="attributes">Attributes</label><br/>
+        <input id="all" type="radio" name="favorite">
+        <label for="all">All elements</label><br/>
+        <label for="number">hours you spend on HTML per day</label><br/>
+        <input id"number" type="number" min="0" max="16" style="background-color: aqua">
+        <p>Choose your favorite OS</p>
+        <input id="linux" type="checkbox" value="Linux">
+        <label for="linux">Linux</label><br/>
+        <input type="checkbox" id="macos" value="macOS">
+        <label for="macos">macOS</label><br/>
+        <input type="checkbox" id="windows" value="Windows">
+        <label for="windows">Windows</label><br/>
+        <input type="checkbox" id="bs" value="BSD">
+        <label for="bs">BSD-bsed OS</label><br  
+        <p>Select the browser you use more:</p>
+        <select name="browsers" id="dropdown" style="background-color: aqua;"> 
+            <option value="">Chrome</option>
+            <option value="">Safari</option>
+            <option value="">FireFox</option>
+            <option value="">Opera</option>
+            <option value="">Internet Explorer</option>
+            <option value="">Edge</option>
+        </select><br/>
+        <label for="comments">Additional comments?</label><br/>
+        <textarea name="comments" id="comments" width="30" hight="40" placeholder="write here" 
+        style="background-color: aqua;" rows="" cols="25"></textarea><br/>
+        <input type="submit" value="submit">
+</form>
+</html>
